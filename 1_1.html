@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>:root{
+        --yellow:#ffc54d;
+        --green:#53bf9d;
+        --red:crimson;
+        --white:whitesmoke;
+    }
+    body,h2{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .loader{
+        background:linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.651)),url(css/cake2.jpg);
+        height: 70vh;
+        color: var(--white);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    header a{
+        text-decoration: none;
+        color:var(--yellow);
+        min-width: 120px; 
+    }
+    header{
+        display: flex;
+        padding: 1em;
+        flex-wrap: wrap;
+        row-gap: 1em;
+    }
+    #logo{
+        flex: 3;
+        display: flex;
+        font-size: 1.25em;
+        align-items: center;
+    }
+    nav{
+        flex: 2;
+        display: flex;
+        align-items: center;
+    }
+    nav a{
+        flex: 1;
+    }
+    nav a:hover{
+        color: var(--green);
+    }
+    .maintext{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+        padding: 2em;
+        
+        
+    }
+    .text1{
+        color: rgb(6, 255, 255);
+        font-size: 3.4em;
+        font-weight: bolder;
+        text-transform: initial;
+        
+        
+    }
+    .text2{
+         color: rgba(4, 226, 255, 0.719);
+         border-color: #ffc54d;
+        font-size: 2em;
+    }
+    .maintext div{
+        margin-top: .75em;
+    }
+    .maintext button{
+        width: 20vh;
+        margin-top:2em;
+        border-radius: 10px;
+        background-color: var(--green);
+        padding: .7em;
+        color: var(--white);
+        border: 1px solid var(--green);
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+        background: linear-gradient(to right,rgb(100, 57, 57),rgb(43, 15, 15));
+        color: var(--white);
+    }
+    #menuheading,#location{
+        background: linear-gradient(to right,rgb(56, 33, 33),rgb(87, 63, 63));
+        font-size: 2.5em;
+        color: var(--red);
+        display: flex;
+        justify-content: center;
+      
+    }
+    .menu th{
+        color: var(--green);
+        font-size: 1.8em;
+    }
+    table{
+        width: 100%;
+        padding: 1em;
+    }
+    .menu tr{
+        display: flex;
+        justify-content: center;
+        margin-top: .8em;
+    
+    }
+    .menu td:nth-child(1){
+        flex: 1;
+        justify-self: left;
+    }
+    .menu td:nth-child(2){
+        justify-self: right;
+    }
+    .locations{
+        background: linear-gradient(to right,rgb(56, 33, 33),rgb(8, 5, 5));
+        color: var(--white);
+        flex-wrap: wrap;
+    
+    }
+    .locations h2{
+        color: var(--green);
+         margin-bottom: .8em;
+    }
+    .location div{
+        flex: 1;
+        padding: 1em;
+        min-width: 220px;
+    }
+    footer{
+        background-color:rgb(51, 40, 40);
+        color: var(--white);
+        padding: .25em 1em;
+    }
+    
+    </style>
+    <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></a>
+    <title>VETRI-OP</title>
+</head>
+<body>
+    <div class="loader">
+        <header>
+            <a href="index1.html" id="logo"><span>&#x2655;</span>kaviya</a>
+        <nav>
+            <a href=""><span>&#9776;</span>menu</a>
+            <a href=""><ion-icon name="location-outline"></ion-icon><span>&#128161</span>about us</a>
+        </nav>
+    </header>
+
+        <div>
+            <div class="maintext">
+                <div class="text1">
+                kaviya's dream cake
+                </div>
+                <div class="text2">
+                    bakery&sweets
+                </div>
+                <div class="callus">
+                    call us <span>&#9990</span>+91 9597450441
+                </div>
+                <button>Order Online</button>
+            </div>
+        </div>
+    </div>
+    <h2 id="menuheading">menu</h2>
+    <div class="menu">
+        <div class="start">
+            <table>
+                <th colspan="2">sandwich</th>
+                    <tr>
+                        <td>veg sandwich</td>
+                        <td><span>&#8377</span>60.00</td>
+                        </tr>
+                    <tr>
+                        <td>mushroom sandwich</td>
+                    <td><span>&#8377</span>70.00</td>
+                    </tr>
+                    <tr>
+                        <td>panner sandwich</td>
+                    <td><span>&#8377</span>70.00</td>
+                    </tr>
+                    <tr>
+                        <td>egg sandwich</td>
+                    <td><span>&#8377</span>70.00</td>
+                    </tr>
+                    <tr>
+                        <td>bread omalate</td>
+                        <td><span>&#8377</span>40.00</td>
+                    </tr>
+                    <tr>
+                        <td>chicken sandwich</td>
+                        <td><span>&#8377</span>80.00</td>
+                    </tr>
+                </table>
+            </div>
+                <div class="beverages">
+                    <table>
+                        <th colspan="2">beverages</th>
+                            <tr>
+                                <td>vanila milk shake</td>
+                                <td><span>&#8377</span>70.00</td>
+                                </tr>
+                                <tr><td>strawberry milk</td>
+                                    <td><span>&#8377</span>70.00</td>
+                                </tr>
+                                <tr>
+                                    <td>chocolate milk shake</td>
+                                <td><span>&#8377</span>80.00</td>
+                                </tr>
+                                <tr>
+                                    <td>royal dates shake</td>
+                                    <td><span>&#8377</span>100.00</td>  
+                                </tr>
+                                <tr>
+                                    <td>oreo black forest shake</td>
+                                <td><span>&#8377</span>100.00</td>
+                                </tr>
+                                <tr>                                  
+                                <td>caramel&kitkat shake</td>
+                                <td><span>&#8377</span>100.00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="fries">
+                            <table>
+                                <th colspan="2">fries</th>
+                                <tr>
+                                    <td>french fries</td>
+                                    <td><span>&#8377</span>40.00</td>
+                                </tr>
+                                <tr>
+                                    <td>masala fries</td>
+                                    <td><span>&#8377</span>40.00</t>
+                                </tr>
+                                <tr>
+                                    <td>smilies</td>
+                                    <td><span>&#8377</span>65.00</td>
+                                </tr>
+                                <tr>
+                                    <td>chicken nuggets</td>
+                                    <td><span>&#8377</span>65.00</td>
+                                </tr>
+                                <tr>
+                                    <td>fish fingers</td>
+                                    <td><span>&#8377</span>70.00</td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div class="ice">
+                                <table>
+                                <th colspan="2">ice cream</th>
+                                <tr>
+                                    <td>vanilla</td>
+                                    <td><span>&#8377</span>50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>strawberry</td>
+                                    <td><span>&#8377</span>50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>chocolate</td>
+                                    <td><span>&#8377</span>55.00</td>
+                                </tr>
+                                <tr>
+                                    <td>mango</td>
+                                    <td><span>&#8377</span>50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>butterscatch</td>
+                                    <td><span>&#8377</span>55.00</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                        <div class="locations">
+                            <h2 id="location">location</h2>
+                            <div class="anna nager">
+                                <h2>anna nager</h2>
+                                <address>10/139 
+                                    3rd street anna nager,sendurai-621714(TK)ariyalur(DT)</address>
+                            </div>
+                        </div>
+                        <footer>
+                            <div id="copyright">&#169 copyright VETRI-OP</div>
+                        </footer>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js" integrity="sha512-2ySmquu6HK3CAvwLllh0R8K8buFPMZsUwWLZIlB7WW8c8ilUtoNyhsmEsQn2U0IV1USr2Oc/9DJzlr4cxAbuxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                   
+   
+</body>
+</html>
